@@ -1,0 +1,21 @@
+# Ambiente virtual
+venv/
+
+# Caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de banco de dados SQLite (ajuste conforme seu uso)
+*.db
+
+# Arquivos do VS Code (opcional, se você usa)
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Relatórios temporários ou arquivos gerados
+*.csv
+*.xlsx
+relatorio_*.txt
