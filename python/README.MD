@@ -1,15 +1,29 @@
-# MiniMercado
+# 🛒 MiniMercado
 
-Este é um sistema de controle de estoque e cálculo de lucros feito em Python com integração ao SQL SERVER.
+Um sistema de controle de estoque e cálculo de lucros desenvolvido em Python, com integração ao SQL Server.
 
-## Funcionalidades
+---
 
-- Cadastro de produtos
-- Controle de estoque
-- Registro de vendas
-- Cálculo de lucros
+## ✅ Funcionalidades
 
-## Tecnologias
+- 📋 Cadastro de produtos  
+- 📦 Controle de estoque  
+- 💰 Registro de vendas  
+- 📊 Cálculo de lucros  
 
-- Python
-- SQL SERVER
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- 🐍 Python  
+- 🗄 SQL Server  
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto tem como objetivo simular a rotina de um pequeno mercado, permitindo a prática de conceitos como:
+
+- CRUD com banco de dados  
+- Integração entre Python e SQL Server  
+- Lógica de programação aplicada a um caso real  
