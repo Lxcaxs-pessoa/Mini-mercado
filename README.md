@@ -6,10 +6,15 @@ Um sistema de controle de estoque e cálculo de lucros desenvolvido em Python, c
 
 ## ✅ Funcionalidades
 
-- 📋 Cadastro de produtos  
-- 📦 Controle de estoque  
-- 💰 Registro de vendas  
-- 📊 Cálculo de lucros  
+✅ Cadastro de produtos com preço e quantidade
+
+✅ Atualização de estoque (entrada e saída)
+
+✅ Cálculo automático de lucros
+
+✅ Relatórios simples (estoque atual, produtos em falta, etc.)
+
+✅ Interface via terminal (CLI)
 
 ---
 
