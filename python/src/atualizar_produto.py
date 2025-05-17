@@ -1,15 +1,12 @@
 from src.conexao import conectar
+
 def atualizar_produto():
     conn = conectar()
     cursor = conn.cursor()
     try:
-        produto = int(input('Digite o ID do produto que vai ser alterado: '))
+        produto_id = int(input('Digite o ID do produto que vai ser alterado: '))
 
-        if produto():
-            cursor.execute('SELECT id, nome, quantidade, preco_venda, preco_compra FROM produtos WHERE id = ?', (int(produto),))
-        else:
-            cursor.execute("SELECT id, nome, quantidade, preco_venda FROM produtos WHERE nome LIKE ?",(f"%{produto}%"))
-        
+        cursor.execute('SELECT id, nome, quantidade, preco_venda, preco_compra FROM produtos WHERE id = ?', (produto_id,))
         resultado = cursor.fetchall()
         
         if not resultado:
@@ -19,8 +16,6 @@ def atualizar_produto():
         print("\nProduto encontrado:")
         for prod in resultado:
             print(f"ID: {prod[0]}, Nome: {prod[1]}, Quantidade: {prod[2]}, Preço Venda: {prod[3]}, Preço Compra: {prod[4]}")
-
-        id_produto = resultado[0][0]  # Pegamos o ID do primeiro resultado
 
         print("\nDigite os novos dados (pressione Enter para manter o valor atual):")
 
@@ -39,7 +34,7 @@ def atualizar_produto():
             UPDATE produtos 
             SET nome = ?, quantidade = ?, preco_venda = ?, preco_compra = ?
             WHERE id = ?
-        """, (nome_final, qtd_final, preco_venda_final, preco_compra_final, id_produto))
+        """, (nome_final, qtd_final, preco_venda_final, preco_compra_final, produto_id))
 
         conn.commit()
         print("✅ Produto atualizado com sucesso.")
